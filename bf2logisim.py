@@ -31,7 +31,7 @@ if __name__ == '__main__':
             s = input.read()
             s = ''.join(s.split())
             comm = 0
-            start = False
+            start = s[0] != '['
             for c in s:
                 if start:
                     output.write(cmd(c))
